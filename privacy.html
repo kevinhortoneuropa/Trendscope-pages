@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trendscope — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 -apple-system, "Segoe UI", system-ui, sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+         color: #1b1b1a; background: #fcfcfb; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e4; background: #141413; }
+    code { background: #0000; border-color: #33332f; }
+    a { color: #7aa7e0; }
+    .box { background: #1d1d1b; border-color: #33332f; }
+  }
+  h1 { font-size: 1.6rem; letter-spacing: -.02em; margin: 0 0 .3rem; }
+  .sub { color: #6b6b66; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  code { background: #f0efea; border: 1px solid #e1e0d9; border-radius: 4px;
+         padding: .1em .35em; font-size: .9em; }
+  .box { background: #f6f5f1; border: 1px solid #e1e0d9; border-radius: 8px;
+         padding: 1rem 1.1rem; margin: 1.2rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #e1e0d9;
+           color: #6b6b66; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Trendscope · last updated 8 October 2026</p>
+
+<div class="box">
+  <strong>The short version.</strong> Trendscope runs entirely on your own
+  computer. It has no server, no user accounts and no analytics. Nothing it
+  reads from your Google account is transmitted to the developer or to any
+  third party, because there is nowhere for it to be transmitted to.
+</div>
+
+<h2>Who operates this software</h2>
+<p>Trendscope is a personal, open project maintained by an individual. It is
+distributed as source code that you run yourself. The developer operates no
+servers and receives no data from installations.</p>
+
+<h2>What Google data Trendscope accesses</h2>
+<p>If — and only if — you choose to connect a Google account, Trendscope
+requests these OAuth scopes:</p>
+<ul>
+  <li><code>openid</code> and <code>userinfo.email</code> — to show which
+    account is connected and to tell two connected accounts apart.</li>
+  <li><code>calendar.readonly</code> — to read the calendars on that account.</li>
+</ul>
+<p>The read-only calendar scope is requested deliberately. Trendscope displays
+your events; it cannot create, change or delete anything in your Google
+account, and no narrower scope exposes the event times it needs.</p>
+
+<h2>How that data is used</h2>
+<p>Calendar events are shown in Trendscope's own calendar, alongside your local
+tasks, reminders and reviews, so you can plan around real commitments. They may
+also trigger a local desktop notification before an event starts, if you have
+switched alerts on.</p>
+
+<h2>Where it is stored</h2>
+<ul>
+  <li>Event titles, times, locations and descriptions are cached in a SQLite
+    database file on your computer (<code>data/trendscope.db</code>).</li>
+  <li>OAuth access and refresh tokens are stored in that same local file.</li>
+  <li>Your OAuth client ID and secret live in a local <code>.env</code> file.</li>
+</ul>
+<p>None of these files leave your machine. Trendscope makes no outbound
+connection other than directly to Google's own API endpoints and to the public
+news and job sources you configure.</p>
+
+<h2>Sharing</h2>
+<p>Google user data is never sold, never shared with third parties, never used
+for advertising, and never used to train any model. It is not transmitted to
+the developer. Trendscope has no telemetry and no crash reporting.</p>
+
+<h2>Retention and deletion</h2>
+<p>Cached events are replaced each time you sync and are deleted outright when
+you disconnect the account or switch a calendar off. Disconnecting an account
+in Trendscope also asks Google to revoke the token.</p>
+<p>You can remove everything at any time by deleting
+<code>data/trendscope.db</code>, or revoke Trendscope's access independently at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>Limited Use</h2>
+<p>Trendscope's use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Security</h2>
+<p>Because the application is local, your Google tokens are protected by your
+operating system account and whatever disk encryption you use — the same
+protection as any other file on your computer. Anyone with access to your user
+account could read them, so treat <code>data/trendscope.db</code> and
+<code>.env</code> as you would any other credential file.</p>
+
+<h2>Children</h2>
+<p>Trendscope is not directed at children and collects nothing from anyone,
+including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top of this page changes with it.</p>
+
+<footer>
+  Questions about this policy: use the support email address shown on the
+  Google consent screen when you connect an account.
+</footer>
+
+</body>
+</html>

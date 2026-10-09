@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trendscope</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 -apple-system, "Segoe UI", system-ui, sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+         color: #1b1b1a; background: #fcfcfb; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e4; background: #141413; }
+    code { background: #26262400; border-color: #33332f; }
+    a { color: #7aa7e0; }
+  }
+  h1 { font-size: 1.7rem; letter-spacing: -.02em; margin: 0 0 .3rem; }
+  .sub { color: #6b6b66; margin: 0 0 2.2rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  code { background: #f0efea; border: 1px solid #e1e0d9; border-radius: 4px;
+         padding: .1em .35em; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #e1e0d9;
+           color: #6b6b66; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Trendscope</h1>
+<p class="sub">A personal reading, planning and study tool that runs on your own
+computer.</p>
+
+<p>Trendscope collects technology news, job postings and research into a local
+database, and turns them into a reader, a skills dashboard, a project board, a
+calendar and a study planner. It runs entirely on your own machine as a local
+web application at <code>127.0.0.1</code>, with an optional tray app for
+Windows.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Reads articles, discussions, papers and podcasts in one place.</li>
+  <li>Tracks which skills job postings are actually asking for.</li>
+  <li>Plans work on a board, a timeline and a calendar.</li>
+  <li>Tracks job applications and interview preparation.</li>
+  <li>Schedules repeating reminders such as pay dates and birthdays.</li>
+  <li>Shows your Google Calendar alongside all of the above, read-only.</li>
+</ul>
+
+<h2>Google Calendar</h2>
+<p>Trendscope can sign in to Google to <strong>read</strong> your calendars, so
+that real commitments appear next to your own tasks and reminders. It never
+creates, edits or deletes anything in your Google account: it requests only the
+read-only calendar scope.</p>
+<p>Everything it reads is stored in a database file on your own computer. There
+is no Trendscope server, no account to create, and nothing is uploaded
+anywhere. See the <a href="privacy.html">privacy policy</a> for the detail.</p>
+
+<h2>Running it</h2>
+<p>Trendscope needs Python 3.10 or newer and nothing else — no installation
+step, no dependencies to download. Start it with <code>python run.py</code> for
+the web app, or <code>python app.py</code> on Windows for the version that
+lives in the notification area.</p>
+
+<footer>
+  Trendscope is a personal project, used by its author and a small number of
+  people known to them. Questions: use the support address shown on the Google
+  consent screen.
+</footer>
+
+</body>
+</html>
